@@ -155,11 +155,7 @@ int main(int argc, char **argv)
         ros::spinOnce();
         rate.sleep();
     }
-  
-    if ((arming_client0.call(arm_cmd) && 
-	    arming_client1.call(arm_cmd) &&
-	    arming_client2.call(arm_cmd)  &&
-            arm_cmd.response.success)){
+
       ROS_INFO("takingoff");
       ROS_INFO("marking");
        for(int i = 20; ros::ok() && i > 0; --i){
@@ -216,7 +212,7 @@ int main(int argc, char **argv)
           ros::spinOnce();
           rate.sleep();
         }
-    }
+    
 
     ROS_INFO("landing");
     while (!(land_client0.call(land) &&
