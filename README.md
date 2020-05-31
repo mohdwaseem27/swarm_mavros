@@ -4,7 +4,7 @@
 
 `cd src/Firmware`
 
-## BUild the SITL code
+## Build the SITL code
 
 `git submodule update --init --recursive`
 
