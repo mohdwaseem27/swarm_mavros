@@ -205,5 +205,8 @@ include_directories(
 add_executable(swarm_formation src/swarm_formation.cpp)
 target_link_libraries(swarm_formation ${catkin_LIBRARIES})
 
+add_executable(swarm src/swarm.cpp)
+target_link_libraries(swarm ${catkin_LIBRARIES})
+
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)

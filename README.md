@@ -26,5 +26,9 @@ This will open the three iris quadcopter models in Gazebo
 
 `rosrun swarm_mavros swarm_formation`
 
+or
+
+`rosrun swarm_mavros swarm`
+
 This automatically enables offboard mode and arms the vehicle. The three vehicles will move and form predefined positions
 
